@@ -16,7 +16,6 @@ public abstract class BaseActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         initView();
-        Log.d("22","33");
     }
 
     protected abstract void initView();
