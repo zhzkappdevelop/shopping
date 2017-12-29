@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appublisher.shopping.common.activity.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:background="@color/bg_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            style="@style/RadioButtonTv"
+            android:drawableTop="@drawable/drawable_rdb_index_selector"
+            android:text="@string/rdb_index" />
+
+        <RadioButton
+            style="@style/RadioButtonTv"
+            android:drawableTop="@drawable/drawable_rdb_category_selector"
+            android:text="@string/rdb_category" />
+
+        <RadioButton
+            style="@style/RadioButtonTv"
+            android:drawableTop="@drawable/drawable_rdb_activity_selector"
+            android:text="@string/rdb_activity" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/RadioButtonTv"
+            android:drawableTop="@drawable/drawable_rdb_user_selector"
+            android:text="@string/rdb_user" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

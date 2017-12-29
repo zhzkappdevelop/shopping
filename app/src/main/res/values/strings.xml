@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shopping</string>
+
+    <string name="rdb_index">首页</string>
+    <string name="rdb_category">分类</string>
+    <string name="rdb_activity">活动</string>
+    <string name="rdb_user">个人</string>
+
+</resources>
